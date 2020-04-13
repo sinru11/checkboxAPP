@@ -15,18 +15,18 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="請選出喜歡的科目"
+        android:text="請選出喜歡的歌星"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txvShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="結果"
+        android:text="我喜歡的有："
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -35,47 +35,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="確定"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox8"
-        tools:layout_editor_absoluteX="32dp" />
+        android:onClick="btnOK"
+        android:text="送出"
+        app:layout_constraintStart_toStartOf="@+id/chkSana"
+        app:layout_constraintTop_toBottomOf="@+id/chkSana" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chkMina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
         android:layout_marginTop="32dp"
-        android:text="數學"
+        android:text="Mina"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chkMomo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:text="英文"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        tools:layout_editor_absoluteY="78dp" />
+        android:layout_marginTop="32dp"
+        android:text="Momo"
+        app:layout_constraintStart_toEndOf="@+id/chkMina"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/chkSana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="自然"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        tools:layout_editor_absoluteY="139dp" />
+        android:layout_marginTop="32dp"
+        android:text="Sana"
+        app:layout_constraintStart_toStartOf="@+id/chkMina"
+        app:layout_constraintTop_toBottomOf="@+id/chkMina" />
 
     <CheckBox
-        android:id="@+id/checkBox9"
+        android:id="@+id/chkTzuyu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:text="國文"
-        app:layout_constraintStart_toEndOf="@+id/checkBox8"
-        tools:layout_editor_absoluteY="139dp" />
+        android:layout_marginTop="32dp"
+        android:text="Tzuyu"
+        app:layout_constraintStart_toEndOf="@+id/chkSana"
+        app:layout_constraintTop_toBottomOf="@+id/chkMomo" />
 
 </android.support.constraint.ConstraintLayout>
